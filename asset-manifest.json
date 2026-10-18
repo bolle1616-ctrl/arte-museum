@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/arte-museum/static/css/main.1ccb2a88.css",
+    "main.js": "/arte-museum/static/js/main.7dcf14e3.js",
+    "index.html": "/arte-museum/index.html",
+    "main.1ccb2a88.css.map": "/arte-museum/static/css/main.1ccb2a88.css.map",
+    "main.7dcf14e3.js.map": "/arte-museum/static/js/main.7dcf14e3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ccb2a88.css",
+    "static/js/main.7dcf14e3.js"
+  ]
+}
