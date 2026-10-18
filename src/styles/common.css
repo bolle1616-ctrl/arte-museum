@@ -1,0 +1,404 @@
+/* ========================================
+   Common
+======================================== */
+
+:root {
+  --primary: #1e1e1e;
+  --secondary: #ffffff;
+  --point: #9fff5c;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--primary);
+  background: var(--secondary);
+}
+
+
+/* ========================================
+   Typography
+======================================== */
+
+/* 영문 헤드라인 */
+.en-title {
+  font-family: 'Archivo', sans-serif;
+}
+
+/* UI / 버튼 / GNB / 영문 본문 */
+.ui-text {
+  font-family: 'Inter', sans-serif;
+}
+
+/* 한글 */
+.ko-text,
+.korean-title,
+.korean-text,
+.description {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+
+/* ========================================
+   Header
+======================================== */
+
+.header,
+.header a,
+.header button {
+  font-family: 'Inter', sans-serif;
+}
+
+.header {
+  width: 100%;
+  height: 80px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 1000;
+
+  transition:
+    background 0.3s,
+    box-shadow 0.3s;
+}
+
+.header-inner {
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+
+  margin: 0 auto;
+  padding: 0 70px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header h1 img {
+  width: 150px;
+  display: block;
+}
+
+
+/* GNB */
+
+.header nav {
+  display: flex;
+  gap: 60px;
+}
+
+.header nav a {
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+/* Header Utility */
+
+.header-util {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.header-util .material-symbols-outlined {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+}
+
+.language .arrow {
+  font-size: 18px;
+  margin-left: -3px;
+}
+
+
+/* 홈 페이지 Header */
+
+.home-header {
+  background: transparent;
+}
+
+.home-header nav a,
+.home-header .material-symbols-outlined {
+  color: #fff;
+}
+
+
+/* 서브 페이지 Header */
+
+.sub-header {
+  background: #fff;
+}
+
+.sub-header nav a,
+.sub-header .material-symbols-outlined {
+  color: var(--primary);
+}
+
+
+/* 스크롤 후 Header */
+
+.header-scrolled {
+  background: #fff;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08);
+}
+
+.header-scrolled nav a,
+.header-scrolled .material-symbols-outlined {
+  color: var(--primary);
+}
+
+
+/* ========================================
+   Footer
+======================================== */
+
+.footer {
+  width: 100%;
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+.footer-inner {
+  width: 100%;
+  max-width: 1440px;
+
+  margin: 0 auto;
+  padding: 55px 70px 45px;
+
+  box-sizing: border-box;
+}
+
+
+/* Footer 상단 */
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+/* Footer 왼쪽 */
+
+.footer-logo {
+  margin: 0 0 30px;
+
+  font-family: 'Archivo', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.footer-logo a {
+  color: var(--secondary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/* 지점 목록 */
+
+.footer-location-list {
+  display: flex;
+  gap: 70px;
+}
+
+.footer-location-list > div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-location-list a {
+  color: var(--secondary);
+  text-decoration: none;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+
+  transition: 0.3s;
+}
+
+.footer-location-list a:hover {
+  color: var(--point);
+}
+
+
+/* ========================================
+   Footer Right
+======================================== */
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+
+/* FAMILY SITE */
+
+.family-site-wrap {
+  position: relative;
+}
+
+.family-site {
+  width: 245px;
+  height: 66px;
+
+  padding: 0 50px 0 22px;
+
+  border: 0.5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+
+  background: transparent;
+  color: #fff;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+
+  cursor: pointer;
+
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.family-site-wrap::after {
+  content: '▼';
+
+  position: absolute;
+  top: 50%;
+  right: 20px;
+
+  transform: translateY(-50%);
+
+  color: #fff;
+  font-size: 11px;
+
+  pointer-events: none;
+}
+
+.family-site option {
+  background: #111;
+  color: #fff;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+
+/* ========================================
+   Footer SNS
+======================================== */
+
+.footer-sns {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 18px;
+
+  align-self: flex-end;
+}
+
+.footer-sns a {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: transparent;
+  color: #fff;
+
+  font-size: 32px;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.footer-sns a:hover {
+  color: var(--point);
+}
+
+
+/* ========================================
+   Footer Bottom
+======================================== */
+
+.footer-bottom {
+  margin-top: 50px;
+}
+
+
+/* 하단 링크 */
+
+.footer-links {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 18px;
+}
+
+.footer-links a {
+  position: relative;
+
+  padding: 0 18px;
+
+  color: #fff;
+  text-decoration: none;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer-links a:first-child {
+  padding-left: 0;
+}
+
+.footer-links a:not(:last-child)::after {
+  content: '';
+
+  position: absolute;
+  right: 0;
+  top: 50%;
+
+  width: 1px;
+  height: 14px;
+
+  background: #777;
+
+  transform: translateY(-50%);
+}
+
+
+/* 회사 정보 */
+
+.footer-company p {
+  margin: 4px 0;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+
+  color: #d8d8d8;
+}

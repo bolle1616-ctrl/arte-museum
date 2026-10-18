@@ -1,0 +1,918 @@
+/* ========================================
+   Exhibition Detail
+======================================== */
+
+.exhibition-detail-page {
+  width: 100%;
+  padding-top: 80px;
+  background: var(--secondary);
+}
+
+.exhibition-detail-inner {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 50px 70px 100px;
+  box-sizing: border-box;
+}
+
+
+/* ========================================
+   Back
+======================================== */
+
+.detail-back {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: var(--primary);
+  text-decoration: none;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+/* ========================================
+   Detail Top
+======================================== */
+
+.detail-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+
+/* 왼쪽 비주얼 */
+
+.detail-visual {
+  width: 100%;
+}
+
+.detail-main-image {
+  width: 100%;
+  height: 430px;
+
+  display: block;
+  object-fit: cover;
+}
+
+/* 왼쪽 썸네일 */
+.detail-thumbnails {
+  margin-top: 12px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.detail-thumbnails img {
+  width: 100%;
+  height: 100px;
+
+  display: block;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+
+/* 오른쪽 정보 */
+
+.detail-info {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 4px;
+}
+
+.detail-info h1 {
+  margin: 0 0 8px;
+
+  font-family: 'Archivo', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.detail-subtitle {
+  margin: 0 0 14px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.detail-location {
+  margin: 0 0 22px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 16px;
+}
+
+.detail-description {
+  margin: 0 0 22px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.detail-information {
+  margin: 0;
+}
+
+.detail-information > div {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  column-gap: 12px;
+  align-items: start;
+
+  margin-bottom: 14px;
+}
+
+.detail-information dt {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.detail-information dd {
+  margin: 0;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.detail-information dd span {
+  display: block;
+}
+
+
+/* ========================================
+   Detail Buttons
+======================================== */
+
+.detail-buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 56px;
+}
+
+.detail-ticket-button {
+  flex: 1;
+  height: 54px;
+
+  border: 0;
+  border-radius: 6px;
+  background: var(--primary);
+  color: var(--secondary);
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.detail-ticket-button:hover {
+  background: var(--point);
+  color: var(--primary);
+}
+
+.detail-like-button {
+  width: 54px;
+  height: 54px;
+
+  border: 1px solid #999;
+  border-radius: 6px;
+
+  background: #fff;
+  color: var(--primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.detail-like-button .material-symbols-outlined {
+  font-size: 28px;
+
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+/* 클릭 후 */
+
+
+.detail-like-button.active .material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+/* ========================================
+   Tabs
+======================================== */
+
+.detail-tabs {
+  width: 100%;
+  margin-top: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  border-bottom: 1px solid #bbb;
+}
+
+.detail-tabs button {
+  height: 58px;
+
+  border: 0;
+  background: transparent;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  position: relative;
+}
+
+.detail-tabs button.active::after {
+  content: '';
+
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+
+  width: 100%;
+  height: 2px;
+
+  background: var(--primary);
+}
+
+
+/* ========================================
+   Tab Content
+======================================== */
+
+.detail-tab-content {
+  height: 520px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans KR', sans-serif;
+}
+
+
+/* ========================================
+   Intro Tab
+======================================== */
+
+.intro-content {
+  width: 100%;
+  padding: 20px 0 18px;
+  box-sizing: border-box;
+}
+
+.intro-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+
+  align-items: center;
+
+  padding: 20px 30px 25px;
+  box-sizing: border-box;
+}
+
+.intro-text h3 {
+  margin: 0 0 20px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.intro-text p {
+  margin: 0 0 28px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.intro-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.intro-tags span {
+  padding: 5px 10px;
+
+  border: 1px solid #999;
+  border-radius: 20px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.intro-image img {
+  width: 100%;
+  height: 260px;
+
+  display: block;
+  object-fit: cover;
+}
+
+.intro-content,
+.point-content,
+.gallery-content,
+.guide-content {
+  min-height: 520px;
+  box-sizing: border-box;
+}
+
+/* ========================================
+   Intro Features
+======================================== */
+
+.intro-features {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+
+.intro-feature {
+  height: 130px;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  text-align: center;
+}
+
+.intro-feature:not(:last-child)::after {
+  content: '';
+
+  position: absolute;
+  top: 12px;
+  right: 0;
+
+  width: 1px;
+  height: calc(100% - 24px);
+
+  background: #aaa;
+}
+
+.intro-feature .material-symbols-outlined {
+  font-size: 28px;
+
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+.intro-feature p {
+  margin: 0;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+/* ========================================
+   Point Tab
+======================================== */
+
+.point-content {
+  width: 100%;
+  padding: 40px 25px 0;
+  box-sizing: border-box;
+}
+
+.point-heading {
+  margin: 0 0 30px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+
+/* 포인트 목록 */
+
+.point-list {
+  width: 100%;
+}
+
+.point-item {
+  height: 105px;
+  padding: 10px 0;
+
+  border-bottom: 1px solid #aaa;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.point-item:last-child {
+  border-bottom: 0;
+}
+
+
+/* 왼쪽 텍스트 */
+
+.point-text {
+  flex: 1;
+
+  display: flex;
+  align-items: flex-start;
+
+  gap: 24px;
+}
+
+.point-number {
+  width: 46px;
+  height: 46px;
+
+  flex-shrink: 0;
+
+  border-radius: 10px;
+
+  background: var(--point);
+  color: var(--primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.point-text h4 {
+  margin: 2px 0 10px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.point-text p {
+  margin: 0;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+
+/* 오른쪽 이미지 */
+
+.point-item > img {
+  width: 220px;
+  height: 90px;
+
+  flex-shrink: 0;
+  display: block;
+  object-fit: cover;
+}
+
+/* ========================================
+   Gallery Tab
+======================================== */
+
+.gallery-content {
+  width: 100%;
+  height: 520px;
+
+  padding: 30px 15px 0;
+
+  box-sizing: border-box;
+}
+
+
+/* 제목 */
+
+.gallery-title {
+  margin-bottom: 20px;
+}
+
+.gallery-title h3 {
+  margin: 0 0 6px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.gallery-title p {
+  margin: 0;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+
+/* 전체 이미지 배치 */
+
+.gallery-grid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 18px;
+}
+
+
+/* 왼쪽 메인 이미지 */
+
+.gallery-main {
+  width: 100%;
+  height: 350px;
+}
+
+.gallery-main img {
+  width: 100%;
+  height: 350px;
+
+  display: block;
+  object-fit: cover;
+}
+
+
+
+/* 오른쪽 썸네일 4개 */
+
+.gallery-sub {
+  width: 100%;
+  height: 350px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 168px);
+
+  gap: 14px;
+}
+
+.gallery-sub img {
+  width: 100%;
+  height: 168px;
+
+  display: block;
+  object-fit: cover;
+
+  cursor: pointer;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+
+/* ========================================
+   Guide Tab
+======================================== */
+
+.guide-content {
+  width: 100%;
+  height: 520px;
+
+  padding: 30px 25px 0;
+
+  box-sizing: border-box;
+}
+
+
+/* 제목 */
+
+.guide-title {
+  margin-bottom: 20px;
+}
+
+.guide-title h3 {
+  margin: 0 0 6px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.guide-title p {
+  margin: 0;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+
+/* 전체 레이아웃 */
+
+.guide-layout {
+  display: grid;
+  grid-template-columns: 1.3fr 0.95fr;
+  gap: 24px;
+
+  align-items: start;
+}
+
+
+/* ========================================
+   왼쪽 관람정보
+======================================== */
+
+.guide-info {
+  width: 100%;
+}
+
+.guide-row {
+  min-height: 72px;
+
+  display: grid;
+  grid-template-columns: 42px 150px 1fr;
+  align-items: center;
+
+  border-bottom: 1px solid #bbb;
+
+  box-sizing: border-box;
+}
+
+.guide-row .material-symbols-outlined {
+  font-size: 27px;
+
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+.guide-row strong {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.guide-row p {
+  margin: 0;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.guide-row p span {
+  display: block;
+}
+
+
+/* ========================================
+   오른쪽 유의사항
+======================================== */
+
+.guide-right {
+  width: 100%;
+}
+
+.guide-notice {
+  min-height: 295px;
+
+  padding: 32px 32px;
+
+  background: #e3e3e3;
+
+  box-sizing: border-box;
+}
+
+.guide-notice-title {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 24px;
+}
+
+.guide-notice-title .material-symbols-outlined {
+  font-size: 34px;
+
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+.guide-notice-title h4 {
+  margin: 0;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.guide-notice ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.guide-notice li {
+  margin-bottom: 10px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.guide-notice li:last-child {
+  margin-bottom: 0;
+}
+
+
+/* ========================================
+   버튼
+======================================== */
+
+.guide-buttons {
+  margin-top: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+.guide-buttons button {
+  height: 54px;
+
+  border: 0;
+  border-radius: 6px;
+
+  background: var(--primary);
+  color: var(--secondary);
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.guide-buttons button:hover {
+  background: var(--point);
+  color: var(--primary);
+}
+
+/* ========================================
+   Related Exhibition
+======================================== */
+
+.related-exhibition {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.related-exhibition > h3 {
+  margin: 0 0 18px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+/* 카드 4개 */
+
+.related-grid {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 24px;
+}
+
+
+/* 카드 */
+
+.related-card {
+  display: block;
+
+  border: 1px solid #aaa;
+
+  color: var(--primary);
+  text-decoration: none;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  transition: 0.25s;
+}
+
+
+/* 이미지 */
+
+.related-card img {
+  width: 100%;
+  height: 190px;
+
+  display: block;
+  object-fit: cover;
+}
+
+
+/* 텍스트 */
+
+.related-card-text {
+  padding: 14px 14px 16px;
+}
+
+.related-card-text h4 {
+  margin: 0 0 6px;
+
+  font-family: 'Archivo', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+/* 전시 설명 */
+
+.related-subtitle {
+  margin: 0 0 5px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+
+/* 전시 기간 */
+
+.related-period {
+  margin: 0 0 5px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+/* 지역 */
+
+.related-location {
+  display: block;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+

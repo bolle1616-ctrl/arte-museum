@@ -1,0 +1,246 @@
+/* ========================================
+   Ticket Page
+======================================== */
+
+.ticket-page {
+  width: 100%;
+  padding-top: 80px;
+  background: var(--secondary);
+}
+
+
+/* ========================================
+   Hero
+======================================== */
+
+.ticket-hero {
+  width: 100%;
+  height: 400px;
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+}
+
+.ticket-hero-inner {
+  width: 100%;
+  max-width: 1440px;
+
+  margin: 0 auto;
+  padding: 0 70px;
+
+  box-sizing: border-box;
+}
+
+.ticket-hero h1 {
+  margin: 0 0 12px;
+
+  font-family: 'Archivo', sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1;
+
+  color: var(--primary);
+}
+
+.ticket-hero h2 {
+  margin: 0 0 16px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  font-weight: 600;
+}
+
+.ticket-hero p {
+  margin: 0;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   Ticket Inner
+======================================== */
+
+.ticket-inner {
+  width: 100%;
+  max-width: 1440px;
+
+  margin: 0 auto;
+  padding: 55px 70px 100px;
+
+  box-sizing: border-box;
+}
+
+
+/* ========================================
+   Ticket Tabs
+======================================== */
+
+.ticket-tabs {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+
+  margin-bottom: 55px;
+}
+
+.ticket-tab {
+  height: 56px;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: #ddd;
+  color: var(--primary);
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.ticket-tab:hover {
+  background: #ccc;
+}
+
+.ticket-tab.active {
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+
+/* ========================================
+   Ticket List
+======================================== */
+
+.ticket-list {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 28px 24px;
+}
+
+
+/* ========================================
+   Ticket Card
+======================================== */
+
+.ticket-card {
+  border: 1px solid #999;
+
+  background: var(--secondary);
+
+  box-sizing: border-box;
+}
+
+.ticket-card > img {
+  width: calc(100% - 32px);
+  height: 245px;
+
+  margin: 16px 16px 0;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* ========================================
+   Ticket Card Content
+======================================== */
+
+.ticket-card-content {
+  padding: 16px;
+
+  box-sizing: border-box;
+}
+
+.ticket-card-content h3 {
+  margin: 0 0 10px;
+
+  font-family: 'Archivo', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.ticket-card-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-bottom: 8px;
+}
+
+.ticket-card-info p {
+  margin: 0;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.ticket-card-info span {
+  flex-shrink: 0;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.ticket-card-location {
+  margin: 0 0 18px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+
+/* ========================================
+   Book Button
+======================================== */
+
+.ticket-book-button {
+  width: 100%;
+  height: 54px;
+
+  background: var(--primary);
+  color: var(--secondary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  box-sizing: border-box;
+
+  transition: 0.25s;
+}
+
+.ticket-book-button:hover {
+  background: var(--point);
+  color: var(--primary);
+}

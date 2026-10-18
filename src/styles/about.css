@@ -1,0 +1,437 @@
+/* ========================================
+   About Page
+======================================== */
+
+.about-page {
+  width: 100%;
+  padding-top: 80px;
+  background: var(--secondary);
+}
+
+
+/* ========================================
+   Hero
+======================================== */
+
+.about-hero {
+  width: 100%;
+  height: 400px;
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+}
+
+.about-hero-inner {
+  width: 100%;
+  max-width: 1440px;
+
+  margin: 0 auto;
+  padding: 0 70px;
+
+  box-sizing: border-box;
+}
+
+.about-hero h1 {
+  margin: 0 0 12px;
+
+  font-family: 'Archivo', sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1;
+
+  color: var(--primary);
+}
+
+.about-hero h2 {
+  margin: 0 0 16px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.about-hero p {
+  margin: 0;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   Common Label
+======================================== */
+
+.about-label {
+  display: block;
+
+  margin-bottom: 14px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+
+  color: #555;
+}
+
+.about-label.light {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+
+/* ========================================
+   Story
+======================================== */
+
+.about-story {
+  width: 100%;
+
+  padding: 90px 0;
+
+  background: var(--secondary);
+}
+
+.about-story-inner {
+  width: 100%;
+  max-width: 1440px;
+
+  margin: 0 auto;
+  padding: 0 70px;
+
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 70px;
+
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+
+/* ========================================
+   Story Text
+======================================== */
+
+.about-story-text h2 {
+  margin: 0 0 30px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.about-story-text h3 {
+  margin: 0 0 34px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.about-story-text p {
+  margin: 0;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+
+  word-break: keep-all;
+}
+
+
+/* ========================================
+   Story Image
+======================================== */
+
+.about-story-image {
+  width: 100%;
+}
+
+.about-story-image img {
+  width: 100%;
+  height: 500px;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* ========================================
+   Our Value
+======================================== */
+
+.about-value {
+  width: 100%;
+  height: 560px;
+
+  background-size: cover;
+  background-position: center;
+
+  color: var(--secondary);
+
+  position: relative;
+  overflow: hidden;
+}
+
+.about-value::before {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.about-value-inner {
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+
+  margin: 0 auto;
+  padding: 65px 70px 0;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  z-index: 1;
+
+  box-sizing: border-box;
+}
+
+.about-value-inner > h2 {
+  margin: 0;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+
+/* ========================================
+   Value Grid
+======================================== */
+
+.about-value-grid {
+  width: 100vw;
+
+  margin-left: calc(50% - 50vw);
+  margin-top: auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  background: rgba(0, 0, 0, 0.75);
+
+  padding: 42px max(70px, calc((100vw - 1440px) / 2 + 70px)) 28px;
+
+  box-sizing: border-box;
+}
+
+.about-value-item {
+  min-height: 150px;
+  padding: 0 30px;
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.about-value-item:first-child {
+  padding-left: 0;
+}
+
+.about-value-item:last-child {
+  padding-right: 0;
+  border-right: 0;
+}
+
+
+/* ========================================
+   Value Icon
+======================================== */
+
+.about-value-icon {
+  width: 72px;
+  height: 72px;
+
+  margin: -78px auto 18px;
+
+  border-radius: 50%;
+
+  background: var(--point);
+  color: var(--primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  z-index: 2;
+}
+
+.about-value-icon .material-symbols-outlined {
+  font-size: 30px;
+
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+.about-value-item h3 {
+  margin: 0 0 10px;
+
+  font-family: 'Archivo', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
+  color: var(--point);
+}
+
+.about-value-item p {
+  margin: 0;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+
+/* ========================================
+   Global ARTE MUSEUM
+======================================== */
+
+.about-global {
+  width: 100%;
+  height: 620px;
+
+  background-size: cover;
+  background-position: center;
+
+  color: var(--secondary);
+
+  position: relative;
+  overflow: hidden;
+}
+
+.about-global::before {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(20, 25, 30, 0.45);
+}
+
+.about-global-inner {
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+
+  margin: 0 auto;
+  padding: 70px;
+
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 40px;
+
+  align-items: center;
+
+  position: relative;
+  z-index: 1;
+
+  box-sizing: border-box;
+}
+
+
+/* ========================================
+   Global Text
+======================================== */
+
+.about-global-text {
+  align-self: start;
+  padding-top: 10px;
+}
+
+.about-global-text h2 {
+  margin: 0 0 18px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.about-global-text p {
+  margin: 0 0 38px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+
+/* ========================================
+   Global Map
+======================================== */
+
+.about-global-map {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-global-map img {
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+
+  display: block;
+}
+
+
+/* ========================================
+   Global Button
+======================================== */
+
+.about-global-button {
+  width: 250px;
+  height: 56px;
+
+  background: var(--primary);
+  color: var(--secondary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+
+  transition: 0.25s;
+}
+
+.about-global-button:hover {
+  background: var(--point);
+  color: var(--primary);
+}

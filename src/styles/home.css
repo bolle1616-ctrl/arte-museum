@@ -1,0 +1,618 @@
+/* ========================================
+   Home
+======================================== */
+
+.home {
+  width: 100%;
+}
+
+
+/* ========================================
+   Hero
+======================================== */
+
+.hero {
+  width: 100%;
+  min-height: 720px;
+
+  position: relative;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #fff;
+}
+
+.hero-inner {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 720px;
+
+  margin: 0 auto;
+  padding: 0 70px;
+
+  box-sizing: border-box;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+
+/* Hero 왼쪽 텍스트 */
+
+.hero-text {
+  width: 55%;
+}
+
+.hero-kicker {
+  margin: 0 0 10px;
+
+  font-family: 'Archivo', sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+
+  color: var(--point);
+}
+
+.hero-title {
+  margin: 0;
+
+  font-family: 'Archivo', sans-serif;
+  font-size: 62px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+
+/* ========================================
+   Hero Fixed Area
+======================================== */
+
+.hero-section {
+  position: relative;
+}
+
+.hero-fixed-inner {
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  pointer-events: none;
+  z-index: 20;
+}
+
+
+/* Hero 버튼 */
+
+.hero-buttons {
+  position: absolute;
+
+  left: 70px;
+  top: 530px;
+
+  display: flex;
+  gap: 20px;
+
+  pointer-events: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================
+   Hero Pagination
+======================================== */
+
+.hero-pagination-number {
+  position: absolute;
+
+  left: 70px;
+  bottom: 27px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+  color: #fff;
+
+  pointer-events: auto;
+}
+
+.hero-swiper .swiper-pagination.swiper-pagination-horizontal {
+  width: auto;
+
+  left: calc((100% - 1440px) / 2 + 145px) !important;
+  right: auto;
+  bottom: 30px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  z-index: 30;
+}
+
+.hero-swiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+
+  margin: 0 !important;
+
+  background: #fff;
+  opacity: 1;
+}
+
+.hero-swiper .swiper-pagination-bullet-active {
+  background: var(--point);
+}
+
+
+/* ========================================
+   Benefit Popup
+======================================== */
+
+.popup-inner {
+  width: 100%;
+  max-width: 1440px;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  pointer-events: none;
+  z-index: 20;
+}
+
+.benefit-popup {
+  position: absolute;
+
+  top: 130px;
+  right: 70px;
+
+  width: 360px;
+
+  z-index: 20;
+  pointer-events: auto;
+}
+
+.benefit-popup img {
+  width: 100%;
+  display: block;
+}
+
+.popup-buttons {
+  display: flex;
+}
+
+.popup-buttons button {
+  width: 50%;
+  height: 44px;
+
+  border: 1px solid var(--primary);
+  background: var(--secondary);
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 14px;
+
+  cursor: pointer;
+}
+
+.popup-buttons button + button {
+  border-left: 0;
+}
+
+
+/* ========================================
+   Quick Menu
+======================================== */
+
+.quick-menu {
+  width: 100%;
+
+  padding: 50px 0 60px;
+
+  background: var(--secondary);
+}
+
+.quick-inner {
+  width: 100%;
+  max-width: 1440px;
+
+  margin: 0 auto;
+  padding: 0 70px;
+
+  box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+}
+
+
+
+
+
+
+
+.quick-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+
+
+/* ========================================
+   Current Exhibition
+======================================== */
+
+.current-exhibition {
+  width: 100%;
+
+  padding: 50px 0 80px;
+
+  background: var(--secondary);
+
+  overflow-x: hidden;
+}
+
+.current-inner {
+  width: 100%;
+  max-width: 1440px;
+
+  margin: 0 auto;
+  padding: 0 70px;
+
+  box-sizing: border-box;
+}
+
+
+/* Current Exhibition 제목 */
+
+.current-header {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.current-title {
+  text-align: center;
+}
+
+.current-title p {
+  margin: 0 0 4px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.current-title h2 {
+  margin: 0;
+
+  font-family: 'Archivo', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+
+/* 전체보기 */
+
+
+
+
+
+
+/* Exhibition Swiper */
+
+.exhibition-swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.exhibition-swiper .swiper-slide {
+  height: auto;
+}
+
+
+/* Exhibition Card */
+
+.exhibition-card {
+  height: 100%;
+
+  padding: 16px;
+
+  border: 1px solid #777;
+
+  box-sizing: border-box;
+
+  background: var(--secondary);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.exhibition-card-img {
+  width: 100%;
+  height: 250px;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* 카드 정보 */
+
+.exhibition-card-info {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.exhibition-card-info h3 {
+  margin: 18px 0 10px;
+
+  font-family: 'Archivo', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.exhibition-meta {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+}
+
+.exhibition-subtitle,
+.exhibition-period,
+.exhibition-location {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.exhibition-subtitle,
+.exhibition-period {
+  margin: 0;
+}
+
+.exhibition-period {
+  white-space: nowrap;
+}
+
+.exhibition-location {
+  margin: 6px 0 0;
+}
+
+
+/* 상세보기 버튼 */
+
+
+
+
+
+
+/* Current Exhibition 좌우 쉐브론 */
+
+.exhibition-slider-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.exhibition-prev,
+.exhibition-next {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 42px;
+  height: 42px;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 50%;
+
+  background: var(--primary);
+  color: var(--secondary);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 30;
+
+  cursor: pointer;
+}
+
+.exhibition-prev {
+  left: -52px;
+}
+
+.exhibition-next {
+  right: -52px;
+}
+
+.exhibition-prev .material-symbols-outlined,
+.exhibition-next .material-symbols-outlined {
+  font-size: 28px;
+
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24;
+}
+
+
+/* ========================================
+   Home Location
+======================================== */
+
+.home-location {
+  width: 100%;
+  height: 420px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--secondary);
+}
+
+
+/* 이미지 위 어두운 오버레이 */
+
+.home-location::before {
+  content: '';
+
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.home-location-inner {
+  position: relative;
+
+  z-index: 1;
+
+  text-align: center;
+}
+
+.location-kicker {
+  margin: 0 0 8px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.location-title {
+  margin: 0;
+
+  font-family: 'Archivo', sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.05;
+}
+
+.location-description {
+  width: 430px;
+
+  margin: 24px auto 0;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+/* ========================================
+   Instagram
+======================================== */
+
+.instagram-section {
+  width: 100%;
+
+  padding: 80px 0;
+
+  background: var(--secondary);
+}
+
+.instagram-inner {
+  width: 100%;
+  max-width: 1440px;
+
+  margin: 0 auto;
+  padding: 0 70px;
+
+  box-sizing: border-box;
+}
+
+.instagram-title {
+  text-align: center;
+
+  margin-bottom: 35px;
+}
+
+.instagram-title h2 {
+  margin: 0;
+
+  font-family: 'Archivo', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.instagram-title p {
+  margin: 6px 0 0;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+/* Instagram Swiper */
+
+.instagram-swiper {
+  width: 100%;
+}
+
+.instagram-swiper img {
+  width: 100%;
+  height: 260px;
+
+  display: block;
+
+  object-fit: cover;
+
+  cursor: pointer;
+}
+
+
+/* Instagram 팔로우 버튼 */
+
+
+
+
+

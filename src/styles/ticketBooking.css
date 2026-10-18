@@ -1,0 +1,336 @@
+/* ========================================
+   Ticket Booking Page
+======================================== */
+
+.booking-page {
+  width: 100%;
+  padding-top: 80px;
+
+  background: var(--secondary);
+}
+
+.booking-inner {
+  width: 100%;
+  max-width: 1440px;
+
+  margin: 0 auto;
+  padding: 50px 70px 100px;
+
+  box-sizing: border-box;
+}
+
+
+/* ========================================
+   Back
+======================================== */
+
+.booking-back {
+  display: inline-block;
+
+  margin-bottom: 24px;
+
+  color: var(--primary);
+
+  text-decoration: none;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+/* ========================================
+   Ticket Visual
+======================================== */
+.booking-ticket-visual {
+  width: 100%;
+
+  background: var(--primary);
+
+  padding: 20px 0;
+
+  margin-bottom: 70px;
+}
+
+.booking-ticket-visual img {
+  width: 100%;
+  max-width: 1300px;
+
+  margin: 0 auto;
+
+  display: block;
+}
+
+.booking-ticket-main h2 {
+  margin: 0 0 16px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.booking-ticket-main p {
+  margin: 0;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+
+/* ========================================
+   Booking Options
+======================================== */
+
+.booking-options {
+  width: 100%;
+}
+
+.booking-section-title {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 24px;
+}
+
+.booking-section-title .material-symbols-outlined {
+  font-size: 26px;
+}
+
+.booking-section-title h3 {
+  margin: 0;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.booking-option-list {
+  width: 100%;
+
+  border-top: 1px solid #bbb;
+}
+
+.booking-option {
+  min-height: 130px;
+
+  padding: 24px 20px;
+
+  border-bottom: 1px solid #bbb;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+}
+
+
+/* ========================================
+   Ticket Option Info
+======================================== */
+
+.booking-option-info h4 {
+  margin: 0 0 12px;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.booking-price {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+}
+
+.booking-price del {
+  color: #999;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 14px;
+}
+
+.booking-price strong {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+/* ========================================
+   Counter
+======================================== */
+
+.booking-option-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  gap: 12px;
+}
+
+.booking-counter {
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #aaa;
+  border-radius: 6px;
+
+  overflow: hidden;
+}
+
+.booking-counter button {
+  width: 42px;
+  height: 40px;
+
+  border: 0;
+
+  background: var(--secondary);
+  color: var(--primary);
+
+  font-size: 21px;
+
+  cursor: pointer;
+}
+
+.booking-counter button:hover {
+  background: #f1f1f1;
+}
+
+.booking-counter button:disabled {
+  color: #bbb;
+  cursor: default;
+}
+
+.booking-counter span {
+  width: 48px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+}
+
+.booking-item-total {
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+
+/* ========================================
+   Booking Summary
+======================================== */
+
+.booking-summary {
+  width: 100%;
+
+  margin-top: 35px;
+}
+
+.booking-summary-row {
+  min-height: 60px;
+
+  padding: 0 20px;
+
+  border-bottom: 1px solid #ccc;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 16px;
+}
+
+.booking-summary-row.total {
+  min-height: 76px;
+
+  border-bottom: 1px solid var(--primary);
+
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.booking-summary-row.total strong {
+  font-size: 24px;
+}
+
+
+/* ========================================
+   Booking Bottom
+======================================== */
+
+.booking-bottom {
+  margin-top: 26px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+}
+
+.booking-notice {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.booking-notice .material-symbols-outlined {
+  font-size: 22px;
+}
+
+.booking-notice p {
+  margin: 0;
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 14px;
+}
+
+.booking-payment-button {
+  width: 320px;
+  height: 56px;
+
+  border: 0;
+  border-radius: 6px;
+
+  background: var(--primary);
+  color: var(--secondary);
+
+  font-family: 'IBM Plex Sans KR', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: 0.25s;
+}
+
+.booking-payment-button:hover {
+  background: var(--point);
+  color: var(--primary);
+}
+
+.booking-payment-button:disabled {
+  background: #ccc;
+  color: #777;
+
+  cursor: default;
+}
